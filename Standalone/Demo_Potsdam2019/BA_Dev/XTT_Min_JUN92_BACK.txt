@@ -1,0 +1,55 @@
+! This is compatible with almost all versions of CAPI’s database JUN92.bs 
+!
+! 	
+! 
+! 
+! PL - 03.03.19
+
+>1 SOLIDS (PHASES AND SOLUTIONS)
+A-QUARTZ	2   	A-QUARTZ 		[SI]                		[1]
+B-QUARTZ	2   	B-QUARTZ 		[SI]                		[1]
+COESITE        	2   	COESITE			[SI]                		[1]
+CHLORITE	14  	CHL4			[SI,AL,FE,MG]				[0.002,0.002,0.01,0.01]
+PHENGITE	11      WHITE_MICA		[SI,AL,FE,MG,NA]			[0.002,0.002,0.02,0.02,0.01]
+MUSCOVITE	11      WHITE_MICA		[SI,AL,FE,MG,NA]			[0.002,0.002,0.02,0.02,0.01]
+PARAGONITE	11  	WHITE_MICA_Pg		[SI,NA]             		[0.002,0.01] 
+PLAGIOCLASE	8   	FSP2			[SI,NA,CA,K]				[0.004,0.01,0.01,0.01]
+ANORTHITE	8   	FSP2_An			[SI,NA,CA,K]				[0.004,0.01,0.01,0.01]   
+K-FELDSPAR	8       FSP2_Kfs		[SI,K]              		[0.002,0.01]
+GARNET		12  	GARNET			[CA,MG,FE,MN]				[0.02,0.02,0.02,0.02]
+CPX		6   	OMPH			[SI,FE,MG,CA,NA]			[1,1,1,0.5,0.5]
+AMPHIBOLE	22  	AMPHx			[SI,AL,FE,MG,CA,NA]			[1,1,1,1,1,1]
+EPIDOTE		12.5    EPID			[SI,AL,FE]          		[1,1,1]
+RUTILE		2   	RUTILE			[TI]                		[1]
+SPHENE		5   	SPHENE			[TI,CA]                		[1,1]
+HEMATITE	3	HEMATITE		[FE]						[1]
+MAGNETITE	4	MAGNETITE		[FE]						[1]
+SPINEL		4	SPIN			[FE,MG]						[1,1]
+ILMENITE	3	ILM			[FE,MG]						[1,1]
+BIOTITE		11	BIOTITE			[SI,AL,TI,FE,MG]			[0.015,0.04,0.02,0.02,0.02]
+STAUROLITE	46	STAU			[FE,MG]						[1,1]
+OPX		6	OPX			[FE,MG]						[1,1]
+CORDIERITE	18	CORD			[FE,MG]						[1,1]
+CHLORITOID	6	CTOID			[FE,MG]						[1,1]
+CALCITE		3	CALCITE			[CA]						[1]
+DOLOMITE	6	DOLOMITE		[MG,CA]						[1,1]
+MAGNESITE	3	MAGNESITE		[MG]						[1]
+RHODOCHROSITE	3	RHODOCHROSITE		[MN]						[1]
+ANTIGORITE	68	ANTIGORITE		[MG]						[1]
+LAWSONITE	8	LAWSONITE		[CA]			[1]
+TALC		11	TALC			[MG]			[1]
+ANDALUSITE	5	ANDALUSITE		[AL]			[1]
+KYANITE		5	KYANITE			[AL]			[1]
+SILLIMANITE	5	SILLIMANITE		[AL]			[1]
+OLIVINE		4	OLIVINEi		[FE,MG]			[1,1]
+
+
+>2 LIQUID (PHASES, SPECIES AND SOLUTIONS) + OXYGEN BUFFERS
+Fluid_H2O	1	STEAM			[H]			[1]	
+Fluid_CO2	2	CARBON-DIOXIDE		[C]			[1]
+Oxygen		1	OXYGEN_GAS		[O]			[1]
+Buffer_QFM	2	QFM-BUFFER		[O]			[1]
+
+
+
+

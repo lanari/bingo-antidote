@@ -1,0 +1,32 @@
+! -------------------------------------------------------------------------
+! XThermoTools Default File                             (XTT_Min_JUN92.txt)
+!
+!  File with the mineral list with DB compatibility 
+!
+!  Format:  
+!
+!
+!                       TO BE CHANGED LATER FOR TC55.txt
+!
+!
+!      Created P. Lanari (29.01.2016) / Modified P. Lanari (20.10.2016)
+! -------------------------------------------------------------------------
+!
+!
+A-QUARTZ        2   	q               [SI]			[1]
+CHLORITE        14  	CHL             [SI,AL,FE,MG]		[1,1,2,2]
+PHENGITE        11      WM02            [SI,AL,FE,MG,NA]		[1,1,0.2,0.2,0.02]
+MUSCOVITE       11      WM02            [SI,AL,FE,MG,NA]		[1,1,0.2,0.2,0.02]
+PARAGONITE      11  	WM02_pa         []			[] 
+PLAGIOCLASE     8   	PLC1            [SI,NA,CA,K]		[1,1,1,1]
+ANORTHITE     	8   	FSP2_An			[SI,NA,CA,K]		[1,1,1,1]
+K-SPAR          8       PLC1_san		[SI,K]			[1,1]
+GARNET          12  	GT07w1			[CA,MG,FE,MN]		[1,1,1,1]
+RUTILE          2   	ru              [TI]			[1]
+SPHENE          5   	sph             [TI,CA]                	[1,1]
+ILMENITE        3       ILMTERN         [FE,MG]			[1,1]
+BIOTITE         11      BIOTI           [SI,AL,TI,FE,MG]	[1,1,0.2,0.5,0.5]
+STAUROLITE      46      ST              [MG,FE]			[1,1]
+KYANITE         5       ky              [SI,AL]			[1,1]
+
+

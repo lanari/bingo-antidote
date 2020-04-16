@@ -1,0 +1,84 @@
+------------------------------------------------------------------------------------------
+XThermoTools Default File (Bingo-Antidote)                              [XTT_Min_TC55.txt]
+
+This file contains the mineral list with the corresponding phases or solid-solution models 
+in the database. Be aware that this file is case-sensitive; Edit with caution! 
+
+Format:  
+
+>1  [Block 1: for solid phases and solutions] 
+MineralName		NbOxygens	NameinDB		[El1,El2,...]				[W1,W2,...]
+
+Notes:
+- [MineralName] and [NameinDB] 	Names (single string = no blanks!). The database must
+							   	be adjusted accordingly; e.g. WHITE MICA is not 
+							   	a valid name for the solid solution model
+- [NbOxygens] 					is the number of oxygen atoms used to compute the 
+								structural formula in the thermodynamic database
+- [El1,El2,...] 				Elements used to calculate the residual between observed
+								and modeled mineral compositions
+- [W1,W2,...] 					Weights used to calculate the residual between observed
+								and modeled mineral compositions
+
+>2  [Block 1: for fluid, gases and melt solutions] 
+SpecieName		NbOxygens	NameinDB		[El1,El2,...]				[W1,W2,...]
+
+Notes:
+- [MineralName]					is case-sensitive; use “Fluid” to define a new specie, 
+								“Melt” for a melt model, “Oxygen” for oxygen and “Buffer”
+								for an oxygen buffer 
+
+### Update February 2018, PL, *SWOT*
+	- The format of this file has changed (new: blocks >1 and >2) 
+	- Fluid and Gas species and solutions (Description to be added later on)
+
+------------------------------------------------------------------------------------------
+        Created P. Lanari (29.01.2016) / Last modified by P. Lanari (11.02.2018)
+------------------------------------------------------------------------------------------
+
+! ONLY the following phases have been tested:
+	- BIOTITE		Works fine for bio(TCC) with large discrepancies in Si and Al;
+	- GARNET		Works fine for almandine reach garnets;
+	- PLAGIOCLASE	OK
+	- K-FELDSPAR	Seems good
+
+	
+	
+	
+>1 SOLIDS (PHASES AND SOLUTIONS)
+QUARTZ          2   	quartz          	[SI]                		[1]
+COESITE         2       coesite         	[SI]                		[1]
+CHLORITE        14  	CHLR				[SI,AL,FE,MG]				[0.002,0.002,0.01,0.01]
+PHENGITE        11      PHNG            	[SI,AL,FE,MG,NA]			[0.002,0.002,0.02,0.02,0.01]
+MUSCOVITE       11      PHNG            	[SI,AL,FE,MG,NA]			[0.002,0.002,0.02,0.02,0.01]
+PARAGONITE      11  	PHNG_pa         	[SI,NA]             		[0.002,0.01] 
+PLAGIOCLASE     8   	FSP             	[SI,NA,CA,K]				[0.004,0.01,0.01,0.01]
+ANORTHITE     	8   	FSP2_An				[SI,NA,CA,K]				[0.004,0.01,0.01,0.01]
+K-FELDSPAR      8       FSP_san				[SI,K]              		[0.002,0.01]
+GARNET          12  	GARNET				[CA,MG,FE,MN]				[0.02,0.02,0.02,0.02]
+CPX             6   	OMPH				[SI,FE,MG,CA,NA]			[1,1,1,0.5,0.5]
+AMPHIBOLE       22  	ClAMP				[SI,AL,FE,MG,CA,NA]			[1,1,1,1,1,1]
+EPIDOTE         13      EPI             	[SI,AL,FE]          		[1,1,1]
+RUTILE          2   	rutile				[TI]                		[1]
+SPHENE          5   	sphene				[TI,CA]             		[1,1]
+ILMENITE        3       ILM             	[FE,MG]             		[1,1]
+BIOTITE         11      BIO             	[SI,AL,TI,FE,MG]			[0.015,0.04,0.02,0.02,0.02]
+STAUROLITE      46      STAU            	[MG,FE]             		[1,1]
+KYANITE         5       kyanite         	[SI,AL]             		[1,1]
+SILLIMANITE	 	5	 	sillimanite	  		[SI,AL]             		[1,1
+ANDALUSITE	5	andalusite 				[SI,AL]             		[1,1]
+CORDIERITE	18	CORD		[FE,MG]             		[0.02,0.02]
+
+
+>2 LIQUID (PHASES, SPECIES AND SOLUTIONS) + OXYGEN BUFFERS
+Fluid_H2O		1		water.fluid			[H]							[1]	
+Fluid_CO2		2		carbon.dioxide		[C]							[1]
+Melt			4		LIQtc				[SI,AL,FE,MG,CA,NA,K,H]		[1,1,1,1,1,1,1,1]
+Oxygen			1		oxygen				[O]							[1]
+Buffer_QFM		2		QFM-BUFFER			[O]							[1]
+
+
+
+
+
+
